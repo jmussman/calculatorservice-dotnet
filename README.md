@@ -10,7 +10,7 @@ The code is licensed under the MIT license. You may use and modify all or part o
 
 ### Software Configuration
 
-The library code targets .NET Core 2.1 and above. The unit tests are in xUnit with Moq.
+The library code targets .NET Core 3.1 and above. The unit tests are in xUnit with Moq.
 
 <hr>
 Copyright © 2018-2021 Joel Mussman. All rights reserved.

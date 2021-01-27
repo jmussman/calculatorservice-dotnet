@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,7 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculatorService\CalculatorService.csproj" />

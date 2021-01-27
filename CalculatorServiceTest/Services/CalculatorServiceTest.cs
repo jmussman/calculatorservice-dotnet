@@ -136,5 +136,31 @@ namespace WonderfulWidgets.Services {
 
             Assert.Throws<ArgumentOutOfRangeException>(() => calculatorService.Add(x, y));
         }
+
+        // CSV and Excel
+        // These theories have been left in an examples, but the CsvDataAttribute and
+        // the ExcelDataAttribute are depcreated and no longer included in the xUnit
+        // library. At one point, around 2018, stuff was moved to a separate project on
+        // Github: https://github.com/xunit/samples.xunit. ExcelData is still listed on
+        // the main xUnit site as being there, but it was removed at some point.
+        //
+
+        // [Theory]
+        // [CsvData(@"Resources/LowLeftDataPoints.csv")]
+        // public void RejectsLowLeftDataPointsFromCsv(double x, double y) {
+        //
+        //     GivenCalculatorService();
+        //
+        //    Assert.Throws<ArgumentOutOfRangeException>(() => calculatorService.Add(x, y));
+        // }
+
+        // [Theory]
+        // [ExcelData(@"Resources/LowRightDataPoints.xlsx", "Select * from TestData")]
+        // public void RejectsLowLeftDataPointsFromCsv(double x, double y) {
+        //
+        //    GivenCalculatorService();
+        //
+        //    Assert.Throws<ArgumentOutOfRangeException>(() => calculatorService.Add(x, y));
+        // }
     }
 }
