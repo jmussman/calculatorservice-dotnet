@@ -211,7 +211,6 @@ namespace WonderfulWidgets.Services {
 
             moqCalculatorService.Verify(m => m.Add(1, 1001), Times.Once);
             moqCalculatorService.Verify(m => m.Add(1, 1001), Times.Exactly(1));
-            Times.
         }
     }
 }
